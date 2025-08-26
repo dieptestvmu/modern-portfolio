@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Điệp — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <!-- ============== NAVBAR ============== -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#" class="logo">Điệp<span>.</span></a>
+      <nav class="nav" id="nav">
+        <a href="#home">Trang chủ</a>
+        <a href="#about">Giới thiệu</a>
+        <a href="#skills">Kỹ năng</a>
+        <a href="#projects">Dự án</a>
+        <a href="#contact">Liên hệ</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============== HERO ============== -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <div class="blob b1"></div>
+      <div class="blob b2"></div>
+      <div class="blob b3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1>Xin chào, mình là <span class="neon">Điệp</span> 👋</h1>
+        <p>Tạo sản phẩm số: web template, snippet, web app nhỏ.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn primary">Xem dự án</a>
+          <a href="#contact" class="btn ghost">Liên hệ</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <img src="https://picsum.photos/seed/portrait/520/520" alt="Avatar" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== ABOUT ============== -->
+  <section id="about" class="section">
+    <div class="container grid-2">
+      <div>
+        <h2 class="section-title gradient">Giới thiệu</h2>
+        <p>Mình yêu thích công nghệ và đang trên hành trình xây dựng nguồn thu nhập thụ động từ sản phẩm số.
+          Trang này là portfolio mẫu có thể dùng làm nền tảng cho website cá nhân hoặc bán trên các chợ số.</p>
+        <ul class="bullets">
+          <li>Thiết kế hiện đại, neon/gradient, hiệu ứng động nhẹ.</li>
+          <li>Responsive 100% (desktop, tablet, mobile).</li>
+          <li>Code thuần HTML/CSS/JS, không phụ thuộc framework.</li>
+        </ul>
+      </div>
+      <div class="about-card">
+        <div class="stat">
+          <span class="num">3+</span>
+          <span class="label">Dự án demo</span>
+        </div>
+        <div class="stat">
+          <span class="num">100%</span>
+          <span class="label">Responsive</span>
+        </div>
+        <div class="stat">
+          <span class="num">0</span>
+          <span class="label">Phụ thuộc</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== SKILLS ============== -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title gradient">Kỹ năng</h2>
+      <div class="skills">
+        <div class="skill">
+          <div class="label">HTML</div>
+          <div class="bar"><span style="--w:90%"></span></div>
+        </div>
+        <div class="skill">
+          <div class="label">CSS</div>
+          <div class="bar"><span style="--w:85%"></span></div>
+        </div>
+        <div class="skill">
+          <div class="label">JavaScript</div>
+          <div class="bar"><span style="--w:70%"></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== PROJECTS ============== -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title gradient">Dự án</h2>
+        <div class="filters" id="filters">
+          <button class="chip active" data-filter="all">All</button>
+          <button class="chip" data-filter="web">Web</button>
+          <button class="chip" data-filter="app">App</button>
+          <button class="chip" data-filter="design">Design</button>
+        </div>
+      </div>
+      <div class="grid-3 projects-grid" id="projectsGrid">
+        <article class="card project" data-cat="web">
+          <img src="https://picsum.photos/seed/p1/640/420" alt="Project 1" loading="lazy">
+          <div class="card-body">
+            <h3>Landing Page Minimal</h3>
+            <p>Trang đích tối giản, tốc độ cao, SEO-friendly.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span></div>
+          </div>
+        </article>
+        <article class="card project" data-cat="app">
+          <img src="https://picsum.photos/seed/p2/640/420" alt="Project 2" loading="lazy">
+          <div class="card-body">
+            <h3>Note App</h3>
+            <p>Ghi chú offline (LocalStorage), gọn nhẹ.</p>
+            <div class="tags"><span>JS</span><span>PWA-lite</span></div>
+          </div>
+        </article>
+        <article class="card project" data-cat="design">
+          <img src="https://picsum.photos/seed/p3/640/420" alt="Project 3" loading="lazy">
+          <div class="card-body">
+            <h3>UI Cards Pack</h3>
+            <p>10 thẻ giao diện copy-paste dùng ngay.</p>
+            <div class="tags"><span>UI</span><span>Components</span></div>
+          </div>
+        </article>
+        <article class="card project" data-cat="web">
+          <img src="https://picsum.photos/seed/p4/640/420" alt="Project 4" loading="lazy">
+          <div class="card-body">
+            <h3>Portfolio Neon</h3>
+            <p>Portfolio cá nhân phong cách neon/gradient.</p>
+            <div class="tags"><span>HTML</span><span>JS</span></div>
+          </div>
+        </article>
+        <article class="card project" data-cat="app">
+          <img src="https://picsum.photos/seed/p5/640/420" alt="Project 5" loading="lazy">
+          <div class="card-body">
+            <h3>Budget Tracker</h3>
+            <p>Quản lý chi tiêu cơ bản.</p>
+            <div class="tags"><span>JS</span></div>
+          </div>
+        </article>
+        <article class="card project" data-cat="design">
+          <img src="https://picsum.photos/seed/p6/640/420" alt="Project 6" loading="lazy">
+          <div class="card-body">
+            <h3>Hero Headers</h3>
+            <p>5 mẫu Hero đẹp mắt cho landing page.</p>
+            <div class="tags"><span>Design</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== CONTACT ============== -->
+  <section id="contact" class="section">
+    <div class="container grid-2">
+      <div>
+        <h2 class="section-title gradient">Liên hệ</h2>
+        <p>Form dưới đây dùng <strong>Formspree</strong>. Để nhận email thực:
+        mở <code>assets/js/main.js</code> và thay <code>FORM_ENDPOINT</code> bằng Endpoint Formspree của bạn.</p>
+        <ul class="bullets">
+          <li>Không cần backend.</li>
+          <li>Chống spam cơ bản (honeypot).</li>
+          <li>Hiển thị trạng thái gửi thành công/thất bại.</li>
+        </ul>
+      </div>
+      <form id="contactForm" class="card form">
+        <div class="row">
+          <div class="field">
+            <label for="name">Tên</label>
+            <input id="name" name="name" type="text" placeholder="Tên của bạn" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="email@domain.com" required>
+          </div>
+        </div>
+        <div class="field">
+          <label for="message">Nội dung</label>
+          <textarea id="message" name="message" rows="5" placeholder="Bạn muốn trao đổi gì?" required></textarea>
+        </div>
+        <!-- Honeypot -->
+        <input type="text" name="_gotcha" style="display:none">
+        <button class="btn primary" type="submit" id="sendBtn">Gửi tin nhắn</button>
+        <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2025 Điệp. Made with ❤️</p>
+      <div class="social">
+        <a href="#" aria-label="Twitter"></a>
+        <a href="#" aria-label="GitHub">★</a>
+        <a href="#" aria-label="LinkedIn">in</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
